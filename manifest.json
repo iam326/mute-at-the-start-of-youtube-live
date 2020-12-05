@@ -4,9 +4,16 @@
   "version": "1.0.0",
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/?gl=JP"],
+      "matches": ["https://studio.youtube.com/video/*/livestreaming"],
       "js": ["index.js"]
     }
   ],
-  "permissions": []
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "https://studio.youtube.com/video/*/livestreaming",
+    "tabs",
+    "webNavigation"
+  ]
 }
