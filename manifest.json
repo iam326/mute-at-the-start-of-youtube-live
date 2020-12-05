@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "mute-at-the-start-of-youtube-live",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/?gl=JP"],
+      "js": ["index.js"]
+    }
+  ],
+  "permissions": []
+}
